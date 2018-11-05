@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vitist</title>
+
+  <!-- BOOTSTRAP GRID -->
+  <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+
+  <!-- Slick style -->
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="style/font-awesome.min.css">
+  
+</head>
+<body>
+  <!-- Header Start -->
+  <header>
+    <div class="modal d-flex flex-column">
+      <span class="modal-close"></span>
+
+      <div class="modal-mobile">
+        <div class="header-modal">
+          <div class="modal-logo">
+            <img src="img/logo.png" alt="Logo">
+          </div>
+          <li class="d-flex">
+            <select>
+              <option  id="inputState" selected>RU</option>
+              <option>UA</option>
+            </select>
+          </li>
+        </div>
+        <ul class="modal-nav-m first">
+          <li>
+            <a href="#">Одежда на каждый день <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#">Спортивная одежда <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#">Верхняя одежда <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#">Скидки</a>
+          </li>
+        </ul>
+        <ul class="modal-nav-m">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Покупателям</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Условия опта</a></li>
+          <li><a href="#">Дропшиппинг</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="modal-telephone">
+          <span>+38 099 232-03-08</span>
+          <span>+38 097 232-88-07</span>
+        </div>
+      </div>
+      <ul class="modal-nav first">
+        <li>
+          <a href="#">Одежда на каждый день <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#">Спортивная одежда <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#">Верхняя одежда <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#">Скидки</a>
+        </li>
+      </ul>
+      <ul class="modal-nav">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Покупателям</a></li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="#">Условия опта</a></li>
+        <li><a href="#">Дропшиппинг</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="nav d-flex align-items-center">
+        <div class="nav-logo">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-menu_item">
+            <div class="nav-bg"></div>
+            <a href="#">Одежда на каждый день</a>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            
+            <ul class="content casual">
+              <li class="content-item"><a href="#">Платья</a></li>
+              <li class="content-item"><a href="#">Сарафаны</a></li>
+              <li class="content-item"><a href="#">Блузы</a></li>
+              <li class="content-item"><a href="#">Туники</a></li>
+              <li class="content-item"><a href="#">Юбки</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-menu_item">
+            <div class="nav-bg"></div>
+            <a href="#">Спортивная одежда</a>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="content sport">
+              <li class="content-item"><a href="#">Костюмы</a></li>
+              <li class="content-item"><a href="#">Офисный стиль</a></li>
+              <li class="content-item"><a href="#">Жилеты</a></li>
+              <li class="content-item"><a href="#">Пиджаки</a></li>
+              <li class="content-item"><a href="#">Кардиганы</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-menu_item">
+            <div class="nav-bg"></div>
+            <a href="#">Верхняя одежда</a>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="content outerwear">
+              <li class="content-item"><a href="#">Костюмы</a></li>
+              <li class="content-item"><a href="#">Офисный стиль</a></li>
+              <li class="content-item"><a href="#">Жилеты</a></li>
+              <li class="content-item"><a href="#">Пиджаки</a></li>
+              <li class="content-item"><a href="#">Кардиганы</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Скидки</a>
+          </li>
+        </ul>
+        
+        <ul class="nav-selected desktop">
+          <li class="nav-selected_item">
+            <select>
+            <option  id="inputState" selected>UAH</option>
+            <option>RUB</option>
+            </select>
+          </li>
+          <li class="nav-selected_item">
+            <select>
+                <option  id="inputState" selected>RU</option>
+                <option>UA</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="nav-user desktop">
+          <li class="nav-user_item">
+            <a href="#"><img src="img/icons/searchIcon.png" alt="search"></a>
+          </li>
+          <li class="nav-user_item">
+            <a href="#"><img src="img/icons/userIcon.png" alt="user"></a>
+          </li>
+          <li class="nav-user_item current">
+            <a href="#">
+              <div class="current-icon">0</div>
+              <img src="img/icons/basketIcon.png" alt="basket">
+            </a>
+          </li>
+          <li class="nav-user_item">
+            <button type="button">
+              <img class="modal-show" src="img/icons/burgerIcon.png" alt="burger">
+            </button>
+          </li>
+        </ul>
+        <ul class="nav-user mobile">
+          <li class="nav-user_item">
+            <button type="button">
+              <img class="modal-show_mob" src="img/icons/burgerIcon.png" alt="burger">
+            </button>
+          </li>
+          <li class="nav-user_item">
+            <a href="#"><img src="img/icons/userIcon.png" alt="user"></a>
+          </li>
+          <li class="nav-user_item">
+            <a href="#"><img src="img/icons/searchIcon.png" alt="search"></a>
+          </li>
+          <li class="nav-user_item d-flex">
+            <select>
+            <option  id="inputState" selected>UAH</option>
+            <option>RUB</option>
+            </select>
+          </li>
+          <li class="nav-user_item current">
+            <a href="#">
+              <div class="current-icon">0</div>
+              <img src="img/icons/basketIcon.png" alt="basket">
+            </a>
+          </li>  
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Main Start -->
+  <main class="main"> 
+    <div class="inner d-flex align-items-center">
+      <div class="container-fluid d-flex flex-column justify-content-center">
+        <div class="row">
+          <div class="col-6-md wrap">
+            <div class="inner-content">
+              <div class="inner-content_title">
+                <h1>sale</h1>
+              </div>
+              <p> <span>&#8212;</span> до 30% на одежду</p>
+              <a href="#" class="inner-content_btn">
+                Перейти к покупкам 
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#main" class="inner-scroll d-flex align-items-center" href="#">
+          <span>&#8212;</span>
+          <span>scroll</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      <div class="container-fluid">
+        <div class="row justify-content-end">
+          <div class="col-6 main-content_bg"></div>
+          <div class="col-6">
+            <div class="main-content_text">
+              <h2>Женская одежда оптом от производителя creative в украине</h2>
+              <p>Женская одежда оптом от производителя в Украине пользуется огромным спросом у владельцев магазинов и организаторов совместных покупок в течение многих лет. Бренд Vitist занимается разработкой и пошивом одежды с 2012 года. Каждые 3 месяца мы представляем новые коллекции, которые соответствуют последним тенденциям мира моды.
+              Здесь вы можете купить женскую одежду оптом или в розницу по разумной цене. Модельер, конструктор и технолог торговой марки Vitist разрабатывают актуальные модели, которые прекрасно садятся на разные фигуры, способны подчеркнуть все их достоинства и скрыть недостатки. Каждое изделие представлено в разнообразной цветовой гамме и размерах.
+              Женская одежда оптом от производителя в Украине пользуется огромным спросом у владельцев магазинов и организаторов совместных покупок в течение многих лет. Бренд Vitist занимается разработкой и пошивом одежды с 2012 года. Каждые 3 месяца мы представляем новые коллекции, которые соответствуют последним тенденциям мира моды.
+              Здесь вы можете купить женскую одежду оптом или в розницу по разумной цене. Модельер, конструктор и технолог торговой марки Vitist разрабатывают актуальные модели, которые прекрасно садятся на разные фигуры, способны подчеркнуть все их достоинства и скрыть недостатки. Каждое изделие представлено в разнообразной цветовой гамме и размерах.
+              Женская одежда оптом от производителя в Украине пользуется огромным спросом у владельцев магазинов и организаторов совместных покупок в течение многих лет. Бренд Vitist занимается разработкой и пошивом одежды с 2012 года. Каждые 3 месяца мы представляем новые коллекции, которые соответствуют последним тенденциям мира моды.
+              Здесь вы можете купить женскую одежду оптом или в розницу по разумной цене. Модельер, конструктор и технолог торговой марки Vitist разрабатывают актуальные модели, которые прекрасно садятся на разные фигуры, способны подчеркнуть все их достоинства и скрыть недостатки. Каждое изделие представлено в разнообразной цветовой гамме и размерах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container-fluid">
+        <div class="catalog-content">
+          <div class="slider-wrapper">
+            <div class="my-slider">
+              <div class="my-slider_item">
+                <img src="img/items/firstItem.png" alt="Item">
+                <h3>Коктейльное платье-кейп</h3>
+                <h3>Каролайн</h3>
+                <p class="first-price">600 грн <span>опт</span></p>
+                <p class="second-price price-line">1200 грн </p><span>розница</span>
+                <br>
+                <div class="price-link">
+                  <a href="#" class="d-flex justify-content-center align-items-center">
+                    <span>В корзину </span>
+                    <img class="icon-black" src="img/icons/basketIcon.png" alt="Price">
+                    <img class="icon-white" src="img/icons/basketIconWhite.png" alt="Price">
+                  </a>
+                </div>
+
+              </div>
+              <div class="my-slider_item">
+                <img src="img/items/secondItem.png" alt="Item">
+                <h3>Платье из органзы</h3>
+                <h3>«DeLakrua»</h3>
+                <p class="first-price">469 грн <span>опт</span></p>
+                <p class="second-price">849 грн </p><span>розница</span>
+                <br>
+                <div class="price-link">
+                  <a href="#" class="d-flex justify-content-center align-items-center">
+                    <span>В корзину </span>
+                    <img class="icon-black" src="img/icons/basketIcon.png" alt="Price">
+                    <img class="icon-white" src="img/icons/basketIconWhite.png" alt="Price">
+                  </a>
+                </div>
+
+              </div>
+                <div class="my-slider_item">
+                <img src="img/items/thirdItem.png" alt="Item">
+                <h3>Стильное черное платье</h3>
+                <h3>«Ashley»</h3>
+                <p class="first-price">800 грн <span>опт</span></p>
+                <p class="second-price">1600 грн </p><span>розница</span>
+                <br>
+                <div class="price-link">
+                  <a href="#" class="d-flex justify-content-center align-items-center">
+                    <span>В корзину </span>
+                    <img class="icon-black" src="img/icons/basketIcon.png" alt="Price">
+                    <img class="icon-white" src="img/icons/basketIconWhite.png" alt="Price">
+                  </a>
+                </div>
+
+              </div>
+              <div class="my-slider_item">
+                <img src="img/items/firstItem.png" alt="Item">
+                <h3>Коктейльное платье-кейп</h3>
+                <h3>Каролайн</h3>
+                <p class="first-price">600 грн <span>опт</span></p>
+                <p class="second-price price-line">1200 грн </p><span>розница</span>
+                <br>
+                <div class="price-link">
+                  <a href="#" class="d-flex justify-content-center align-items-center">
+                    <span>В корзину </span>
+                    <img class="icon-black" src="img/icons/basketIcon.png" alt="Price">
+                    <img class="icon-white" src="img/icons/basketIconWhite.png" alt="Price">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="my-slider_arrow"></div>
+          </div>
+          <a href="#" class="catalog-content_link">Перейти в каталог<img src="img/icons/arrDown.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Main End -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="footer-top d-flex">
+        <div>
+          <img class="footer-top_logo" src="img/logoFooter.png" alt="Logo">
+        </div>
+        <div class="footer-top_wrapper d-flex flex-column">
+          <ul class="footer-top_nav ">
+            <li class="footer-nav_item"><a href="#">О компании</a></li>
+            <li class="footer-nav_item"><a href="#">Покупателям</a></li>
+            <li class="footer-nav_item"><a href="#">Оплата и доставка</a></li>
+            <li class="footer-nav_item"><a href="#">Условия опта</a></li>
+            <li class="footer-nav_item"><a href="#">Дропшиппинг</a></li>
+            <li class="footer-nav_item"><a href="#">Контакты</a></li>
+          </ul>
+          
+          <ul class="footer-top_social d-flex align-items-center">
+            <li class="footer-number"> 
+              <span>+38 099 232-03-08</span>
+              <span>+38 097 232-88-07</span>
+            </li>
+  
+            <li class="ask-about">
+              <a href="#">Задать вопрос</a>
+            </li>
+
+            <li class="footer-Link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="footer-bottom_content d-flex justify-content-between align-items-center">
+          <a href="#">© Creative-2018. Все права защищены</a>
+          <div class="d-flex align-items-center"><a style="margin-right: 10px;" href="#">Создание сайта</a><img src="img/corp-Logo.png" alt="Logo"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- slick slider JS -->
+  <script src="slick/slick.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+   jQuery(document).ready(function($) {
+    $('.my-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows: $('.my-slider_arrow'),
+      prevArrow: '<a id="prev" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>',
+      nextArrow: '<a id="next" class="btn btn-juliet"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1
+        }
+      }
+    ]
+    });
+   });
+  </script>
+</body>
+</html>
